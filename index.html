@@ -3,26 +3,42 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David Enersen Portfolio</title>
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+	</script>
 
 </head>
 
 <body>
 	<header>
-		<img src="Images/logo.png" alt="dragon logo" height="80">
+		<img src="Images/logo.png" alt="dragon logo" height="60
+">
 		<h1>David Enersen portfolio</h1>
-
-		<nav>
-			<ul>
-				<li><a class="current" href="index.html">Home</a></li>
-				<li><a href="pages/aboutme.html">Biography</a></li>
-				<li><a class="pictures" href="pages/pictures.html">Pictures</a></li>
-				<li><a href="pages/projects.html">Projects</a></li>
-				<li><a class="lastitem" href="pages/resume.html">Resumes</a></li>
-			</ul>
-		</nav>
-
 	</header>
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="pages/aboutme.html">Biography</a></li>
+			<li><a href="pages/pictures.html">Art Portfolio</a></li>
+			<li><a href="pages/projects.html">Game Projects</a></li>
+			<li><a href="pages/resume.html">Resume</a>
+				<ul>
+					<li><a href="#">Web</a></li>
+					<li><a href="#">Download</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
 	<main>
 		<section>
 			<h2>Welcome to my page! this is still a work in progress...</h2>
