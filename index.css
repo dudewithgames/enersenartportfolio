@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     border: 3px solid #000000;
     background-color: #eaffe6;
+
 }
 a:focus, a:hover {
     font-style: italic;
@@ -21,9 +22,11 @@ a:focus, a:hover {
 /* the styles for the header */
 header
 {
-    padding: 1.5em 0 2em 0;
-    text-align: center;
+    padding: 1em 0 1em 0;
+    text-align: left;
+    vertical-align: middle;
     border-bottom: 3px solid #000000;
+
 }
 
 header h2 {
@@ -36,7 +39,7 @@ header h3 {
 }
 header img
 {
-    float: center;
+    float: left;
     padding: 0 px;
 }
 .shadow {
@@ -50,11 +53,12 @@ main {
 /* the styles for the section */
 section {
     padding: 5px 5px 5px 5px;
+
 }
 section h1 {
     color: #000000;
     font-size: 150%;
-    padding: .5em 0 .25em;
+    padding: .5em 0 .5em;
     margin: 0;
 }
 section p {
@@ -95,6 +99,35 @@ aside h3 {
 aside img {
     padding-bottom: 1em;
 }
+
+nav {
+    clear: both;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    text-align: center;
+    display: block;
+    width: 168px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fffded;
+    font-weight: bold;
+    border-right: 2px solid #fffded;
+}
+nav ul li a.lastitem {
+    width: 170px;
+    border-right: none;
+}
+nav ul li a.current {
+    color: #00ff55;
+}
+
 
 /* the styles for the footer */
 footer {
