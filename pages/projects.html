@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Enersen Portfolio</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="shortcut icon" href="../Images/logo.png">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
 </head>
+
 <body>
+<header>
+    <h1><img src="../Images/logo.png" alt="dragon logo" height="60"> David Enersen portfolio</h1>
+</header>
+<nav id="mobilemenu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html" class="current">Home</a></li>
+        <li><a href="../pages/aboutme.html">Biography</a></li>
+        <li><a href="../pages/pictures.html">Art Portfolio</a></li>
+        <li><a href="../pages/projects.html">Game Projects</a></li>
+        <li><a href="#">Resume</a>
+            <ul>
+                <li><a href="../pages/resume.html">Web</a></li>
+                <li><a href="../docs/resume.pdf">Download</a></li>
+
+            </ul>
+        </li>
+    </ul>
+</nav>
+
 <h1>this worked</h1>
 </body>
 </html>
