@@ -189,6 +189,18 @@ footer {
     clear: both;
 
 }
+footer h1
+{
+    color: white;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+.category{
+    display: inline-block;
+    margin: 0.5px;
+}
 footer p {
     text-align: center;
     color: white;
