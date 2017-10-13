@@ -49,6 +49,9 @@ header img {
 }
 #nav_menu ul li {
     float: left;
+    display:inline-block;
+    /* This is when the drop down box appears */
+    position: relative;
     width: 20%;
 }
 #nav_menu ul li a {
@@ -70,7 +73,7 @@ header img {
 }
 #nav_menu ul ul li {
     float: none;
-    width:127%;
+    width:170%;
 }
 #nav_menu ul li:hover > ul {
     display: block;
