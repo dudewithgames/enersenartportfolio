@@ -9,7 +9,7 @@ html
 
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, "Bebas Neue";
     font-size: 100%;
     width: 99%;
     max-width:960px;
@@ -24,8 +24,23 @@ a:focus, a:hover {
 header {
     padding: 1.5em 0 2em 0;
     border-bottom: 3px solid #000000;
+    background: rgb(226, 255, 236);
+    background: -moz-linear-gradient(top, rgb(234, 255, 230) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(226, 255, 236)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgb(234, 255, 230) 0%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgb(234, 255, 230) 0%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgb(234, 255, 230) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgb(234, 255, 230) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#000000', GradientType=0 );
 }
-header h2 {
+header h1
+{
+    text-shadow: 2px 2px 0px white;
+    text-align: center;
+    font-family: "Bebas Neue";
+}
+header h2
+{
     font-size: 175%;
     color: #800000;
 }
@@ -34,8 +49,9 @@ header h3 {
     font-style: italic;
 }
 header img {
-    float: left;
-    padding: 0 3.75%;
+    float: center;
+    padding: 0 1.65%;
+
 }
 .shadow {
     text-shadow: 2px 2px 2px #800000;
@@ -158,6 +174,13 @@ aside h3 {
 }
 aside img {
     padding-bottom: 1em;
+    max-width: 100%;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+    min-width: 100px;/*Note the px*/
+    min-height: auto;
+    margin: 1em 1em 1em 1em;
 }
 
 /* the styles for the footer */
