@@ -216,11 +216,20 @@ footer p {
     #nav_menu{display:none;}
     .slicknav_menu{display:block; background-color: #000000 !important;}
     .slicknav_btn{background-color: #000000 !important;}
+
+    aside
+    {
+        max-width: 50%;
+        max-height: auto;
+        width: 50%;
+        height: auto;
+        min-width: 100px;/*Note the px*/
+        min-height: auto;
+    }
 }
 
 /*mobile portrait to mobile landscape*/
 @media only screen and (max-width:479px){
     body{font-size:90%;}
-    background-image: url(background_art.png);
 }
 }
