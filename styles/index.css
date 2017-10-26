@@ -63,7 +63,25 @@ table img
     max-width:40%;
     min-width:450px;
 }
+/* unvisited link */
+table a:link {
+    color: #6aff67;
+}
 
+/* visited link */
+table a:visited {
+    color: #bfffc1;
+}
+
+/* mouse over link */
+table a:hover {
+    color: #40ff29;
+}
+
+/* selected link */
+table a:active {
+    color: #f6fff7;
+}
 table, th, td {
     text-align: center;
     color: white;
