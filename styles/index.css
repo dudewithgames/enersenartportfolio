@@ -52,31 +52,6 @@ body {
     margin: 0 auto;
     border: 3px solid #000000;
     background-color: rgba(226, 255, 236, 0.15);
-    text-align: left;
-}
-table {
-    border-collapse: collapse;
-}
-table img
-{
-
-    max-width:40%;
-    min-width:450px;
-}
-
-table, th, td {
-    text-align: center;
-    color: white;
-}
-#titleindex
-{
-    text-align: center;
-    color: white;
-}
-#indexp
-{
-    text-align: center;
-    color: white;
 }
 a:focus, a:hover {
     font-style: italic;
