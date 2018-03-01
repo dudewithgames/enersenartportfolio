@@ -2,6 +2,44 @@
  * CSS Page Transitions
  * Don't forget to add vendor prefixes!
  */
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .m-scene {
 /** Basic styles for an animated element */
 .scene_element {
@@ -30,6 +68,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all 2s ease 0s;
 }
 html
 {
@@ -292,48 +331,12 @@ footer p {
     padding: 1em 0;
 }
 
+
 .slicknav_menu{display:none;}
 
 
 
 /*********************Media Queries**********************/
-/*
- * Keyframes
- */
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
 
 
 /*tablet portrait to standard 960*/

@@ -1,80 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>David Enersen portfolio</title>
-	<link rel="stylesheet" href="styles/index.css">
-	<link rel="stylesheet" href="styles/slicknav.css">
-	<link rel="shortcut icon" href="../enersenartportfolio/Images/logo.png">
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script type="text/javascript">
-        $(document).ready(function(){
-            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
-        });
-	</script>
-
-</head>
-
+<html>
+<title>David Enersen's Art Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="template.css">
+<link rel="stylesheet" href="index.css">
+<link rel="shortcut icon" href="Images/logo.png">
 <body>
-<header>
-	<h1><img src="Images/logo.png" alt="dragon logo" height="100"> David Enersen <br/> Digital Artist | Game Designer </h1>
-</header>
-<nav id="mobilemenu"></nav>
-<nav id="nav_menu">
-	<ul>
-		<li><a href="index.html" class="current">Home</a></li>
-		<li><a href="pages/aboutme.html">About</a></li>
-		<li><a href="pages/pictures.html">Art Portfolio</a></li>
-		<li><a href="pages/projects.html">Game Projects</a></li>
-		<li><a href="#">Resume</a>
-			<ul>
-				<li><a href="pages/resume.html">Web</a></li>
-				<li><a href="docs/resume.pdf">Download</a></li>
 
-			</ul>
-		</li>
-	</ul>
-</nav>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> RESUME</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
 
-			<main>
-				<h1 id="titleindex"><br/><U>Welcome!</U></h1>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
 
-				<p id="indexp">
-					<br/><br/> I am a game designer and digital artist in South Dakota.
+    </div>
+</div>
 
-					<br/><br/> I have years of art experience specializing in character design
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+</div>
 
-					<br/><br/>I have also got experience in programing, animation, and in game design as well.
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>heart of a gamer</em></p>
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="Images/whodis.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+        </div>
+        <p>On August 13 of 1993 I was brought forth to this world. And almost immediately as a baby I was exposed to video games.
+            I was immersed, and wowed by what games could do. And they can do a lot of things, from bringing you into a world filled with excitement and adventures
+            to even discovering who I am as a person. I have collected so much games over the years, and each of those games brought about many different types of fun
+            on the table. That’s why I want to make an impact in the gaming industry. Gaming has such an influence in my life<br><br>
 
-					<br/><br/>I focus Primarily on the overall Aesthetics and design of my creations as i strive to work hard to make sure
-					my creations can be the very best that it can be. I work well in teams as well as i communicate and iterate as fast as possible
-					and as often as possible, generating the best project possible.<br/><br/>
-				</p>
+            I LOVE being social with my friends, or getting myself involved with other hobbies or misadventures. Drawing in particular has
+            been a passion of mine, and it started by accident when one of my friends was asking for feedback on an art tutorial.  Ever since then I’ve been passionate
+            about designing characters, trying to convey vast and different personalities with different designs.
+        </p>
+    </div>
 
-			</main>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+</div>
 
-		<footer>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest <br> Click on the images to make them bigger</em></p><br>
 
-			<div class="container">
-				<div class="category"><a href="https://dragonwithgames.deviantart.com/">
-					<img src="logos/deviantart.png" alt="deviantart" style="width:50px;height:50px;border:0;"></div>
-				<div class="category">			<a href="https://www.linkedin.com/in/dkenersen/">
-					<img src="logos/Linkedin.png" alt="linkedin" style="width:50px;height:50px;border:0;"></div>
-				<div class="category"><a href="https://www.facebook.com/dudewithaproduction/">
-					<img src="logos/facebook.png" alt="facebook" style="width:50px;height:50px;border:0;"></div>
-				<div class="category">					<a href="https://twitter.com/dudewithgames">
-					<img src="logos/twitter.png" alt="twitter" style="width:50px;height:50px;border:0;"></div>
-				<div class="category">
-					<a href="https://www.youtube.com/channel/UCA-ANbx2Q8gO7alII7wifdQ">
-						<img src="logos/youtube.png" alt="youtube" style="width:50px;height:50px;border:0;"></div>
-			</div>
-			</a><p> 2017 David Enersen</p>
-		</footer>
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="Images/justkibo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+        </div>
 
+        <div class="w3-col m3">
+            <img src="Images/sevester.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
 
+        <div class="w3-col m3">
+            <img src="Images/facebookavatar.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img src="Images/allconference24tanner.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="Images/basketballposter for120web.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="Images/volleyballposter.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="Images/volleyballpostcard.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-medium w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+    <!-- Third Parallax Image with Portfolio Text -->
+
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="projects">
+        <h3 class="w3-center">Landkreuzer</h3>
+        <p class="w3-center"><em>4 player co-op madness! </em></p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>David Enersen</b></p><br>
+                <img src="Images/landkreuzer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" style="width:80%" style="height:80%">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/_c4gPPXD-kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <table>
+                <br/>Nathan Golen - project leader
+                <br/>Gus Dubetz - project manager/utilities
+                <br/>Ethan Grahn - Programmer
+                <br/>Adam Gacke - Narrative  Designer/Utilities
+                <br/>Matt Balcom - 3D artist
+                <br/>David Enersen - 3D artist/2D artist
+
+                <br/><br/>"Blow up, mow down, and crush evil cyborgs under your treads in the largest tank known to man, Landkreuzer.
+                Crew up with your friends and become a juggernaut in this 3D couch co-op action game. Can you work together to save
+                Europe from total annihilation?"
+                <br/><br/>
+                <a href="https://www.facebook.com/LandkreuzerGame/">Link to the facebook page!</a><br/>
+                <a href="https://drive.google.com/file/d/0B9_wC-uoA538bUt5WGg2dFFrNlE/view?usp=sharing">Link to the downloadable game!</a>
+            </table>
+            </p>
+           <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3 class="w3-center">Stormbreakers</h3>
+            <p class="w3-center"><em>4 player co-op madness! </em></p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-user w3-margin-right"></i>David Enersen</b></p><br>
+                    <img src="Images/landkreuzer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" style="width:80%" style="height:80%">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/_c4gPPXD-kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <table>
+                    <br/>Nathan Golen - project leader
+                    <br/>Gus Dubetz - project manager/utilities
+                    <br/>Ethan Grahn - Programmer
+                    <br/>Adam Gacke - Narrative  Designer/Utilities
+                    <br/>Matt Balcom - 3D artist
+                    <br/>David Enersen - 3D artist/2D artist
+
+                    <br/><br/>"Blow up, mow down, and crush evil cyborgs under your treads in the largest tank known to man, Landkreuzer.
+                    Crew up with your friends and become a juggernaut in this 3D couch co-op action game. Can you work together to save
+                    Europe from total annihilation?"
+                    <br/><br/>
+                    <a href="https://www.facebook.com/LandkreuzerGame/">Link to the facebook page!</a><br/>
+                    <a href="https://drive.google.com/file/d/0B9_wC-uoA538bUt5WGg2dFFrNlE/view?usp=sharing">Link to the downloadable game!</a>
+                </table>
+                </p>
+         -->
+        </div>
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <p class="w3-center"><em>I would love to hear your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: dave.enersen@gmail.com<br>
+            </div>
+            <p>Leave your message here</p>
+            <form action="mailto:dave.enersen@gmail.com" method="post" enctype="text/plain">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-black w3-right w3-section" type="submit" value="send">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="bgimg-5 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="resume">
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="Images/resumepicture.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+            </div>
+        </div>
+    </div>
+<a href="Images/resumepdf.pdf">Link to PDF</a>
+        <div class="w3-row w3-padding-32 w3-section">
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <br><br>
+    <div class="container">
+        <div class="category"><a href="https://dragonwithgames.deviantart.com/">
+            <img src="logos/deviantart.png" alt="deviantart" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">			<a href="https://www.linkedin.com/in/dkenersen/">
+            <img src="logos/Linkedin.png" alt="linkedin" style="width:50px;height:50px;border:0;"></div>
+        <div class="category"><a href="https://www.facebook.com/dudewithaproduction/">
+            <img src="logos/facebook.png" alt="facebook" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">					<a href="https://twitter.com/dudewithgames">
+            <img src="logos/twitter.png" alt="twitter" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">
+            <a href="https://www.youtube.com/channel/UCA-ANbx2Q8gO7alII7wifdQ">
+                <img src="logos/youtube.png" alt="youtube" style="width:50px;height:50px;border:0;"></div>
+    </div>
+    </a><p> 2017 David Enersen</p>
+</footer>
+
+<script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 
 
 </body>
