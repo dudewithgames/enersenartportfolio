@@ -309,6 +309,7 @@ ul
 /* The expanding image container */
 .container {
 	display: none;
+	z-index: -10;
 }
 
 /* Expanding image text */
