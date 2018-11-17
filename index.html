@@ -15,12 +15,51 @@
             $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
         });
 	</script>
-	<script>
+ <script>
         function togglesidebar()
         {
             document.getElementById("sidebar").classList.toggle('active');
         }
 	</script>
+    <script>
+
+
+        function myFunction(imgs)
+        {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            if(expandImg.src.indexOf("devan2headshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/devan2.png";
+
+            }
+            else if(expandImg.src.indexOf("spyroheadshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/spyro.png";
+            }
+            else if(expandImg.src.indexOf("expressoheadshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/expresso.png";
+            }
+            else if(expandImg.src.indexOf("homecomingheadshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/homecoming.png";
+            }
+            else if(expandImg.src.indexOf("gameday1headshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/gameday1.png";
+            }
+            else if(expandImg.src.indexOf("ianbarseheadshot.png") !== -1)
+            {
+                document.getElementById("expandedImg").src = "Images/ianbarse.png";
+            }
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+            expandImg.parentElement.style.align = "center";
+        }
+    </script>
+
 </head>
 
 <body class="effect8">
@@ -46,10 +85,9 @@
         </div>
 
         <h2> Graphic Designer | Game Designer <br/><br></h2>
-        <img src="Images/dork.jpg" width = 70% height = 70%>
     </div>
-
-
+    <div class="dork">
+    <img src="Images/dork.jpg"width = 40% height = 40%>
     <p><br/>On August 13 of 1993 I was brought forth to this world. And almost immediately as a baby I was exposed to video games.
         I was immersed, and wowed by what games could do. And they can do a lot of things, from bringing you into a world filled with excitement and adventures
         to even discovering who I am as a person. I have collected so much games over the years, and each of those games brought about many different types of fun
@@ -58,141 +96,148 @@
         I LOVE being social with my friends, or getting myself involved with other hobbies or misadventures. Drawing in particular has
         been a passion of mine, and it started by accident when one of my friends was asking for feedback on an art tutorial.  Ever since then I’ve been passionate
         about designing characters, trying to convey vast and different personalities with different designs.
-    </p><a id="pictures"></a>
-    <script>
-        function myFunction(imgs) {
-            var expandImg = document.getElementById("expandedImg");
-            var imgText = document.getElementById("imgtext");
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-        }
-    </script>
-
+    </p>
+    </div>
+    <a id="pictures"></a>
+        <aside>
         <div align="center">
             <!--<h1><a href="#digitaldrawings">Digital Drawing</a> | <a href="#dsuathletics">DSU Athletics client work</a></h1>-->
             <h2>Digital Drawings</h2>
             <p>Click on the images below:</p>
         </div>
 
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_blank" href="Images/devan2.png">
-                    <img src="Images/devan2headshot.png" alt="Devan the otter husky" width="500" height="500">
-                </a>
-                <div class="desc">Original character design <br> <br> Devan the otter husky</div>
-            </div>
-        </div>
-
-
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_blank" href="Images/expresso.png">
-                    <img src="Images/expressoheadshot.png" alt="Expresso the skunk" width="500" height="500">
-                </a>
-                <div class="desc">Fan art of another artist's character <br><br> Expresso the Skunk</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_blank" href="Images/spyro.png">
-                    <img src="Images/spyroheadshot.png" alt="Spyro" width="500" height="500">
-                </a>
-                <div class="desc">Fan art of a known game character <br><br> Spyro the dragon</div>
-            </div>
-        </div>
-
-
-        <div class="clearfix"></div>
-
-    <div style="text-align:center">
-        <!--<a id="digitaldrawings"></a>-->
-            <a id="dsuathletics"></a>
-            <div align="center">
-                <h2>DSU Athletics Client work</h2>
-                <p>Click on the images below:</p>
-            </div>
-
             <div class="responsive">
-                <div class="gallery" text>
-                    <a target="_blank" href="Images/gameday1.png">
-                        <img src="Images/gameday1headshot.png" alt="Cinque Terre" width="500" height="500">
+                <div class="gallery">
+                    <a target="_blank" href="Images/devan2.png" id="otter">
+                        <img src="Images/devan2headshot.png" onmouseover="myFunction(this)" alt="Cinque Terre" width="500" height="500">
+
                     </a>
-                    <div class="desc">Homecoming space graphic for DSU sports team </div>
+                    <div class="desc">Add a description of the image here</div>
                 </div>
             </div>
 
 
             <div class="responsive">
                 <div class="gallery">
-                    <a target="_blank" href="Images/homecoming.png">
-                        <img src="Images/homecomingheadshot.png" alt="Forest" width="500" height="500">
+                    <a target="_blank" href="Images/spyro.png">
+                        <img src="Images/spyroheadshot.png" onmouseover="myFunction(this)" alt="Forest" width="600" height="400">
                     </a>
-                    <div class="desc">Homecoming graphic for DSU sports team </div>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Images/expresso.png">
+                        <img src="Images/expressoheadshot.png" onmouseover="myFunction(this)" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div align="center">
+                <br><br><br>
+                <!--<h1><a href="#digitaldrawings">Digital Drawing</a> | <a href="#dsuathletics">DSU Athletics client work</a></h1>-->
+                <h2><br><br><br><br><br><br><br>DSU Athletics client work</h2>
+                <p>Click on the images below:</p>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Images/homecoming.png" id="otter">
+                        <img src="Images/homecomingheadshot.png" onmouseover="myFunction(this)" alt="Cinque Terre" width="500" height="500">
+
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Images/gameday1.png">
+                        <img src="Images/gameday1headshot.png" onmouseover="myFunction(this)" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
                 </div>
             </div>
 
             <div class="responsive">
                 <div class="gallery">
                     <a target="_blank" href="Images/ianbarse.png">
-                        <img src="Images/ianbarseheadshot.png" alt="Northern Lights" width="500" height="500">
+                        <img src="Images/ianbarseheadshot.png" onmouseover="myFunction(this)" alt="Northern Lights" width="600" height="400">
                     </a>
-                    <div class="desc">Senior DSU Team Player Card</div>
+                    <div class="desc">Add a description of the image here</div>
                 </div>
             </div>
 
-
             <div class="clearfix"></div>
+            </div>
+        </aside>
 
-    <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-    </div>
-    </div>
 
-    <a id="projects"></a>
+    <section>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+
+    </section>
+
     <br/><br/><br/>
     <div align="center">
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <a id="projects"></a>
         <h1>Game Development Projects</h1>
-        <h2>Stormbreakers</h2>
+    </div>
+    <div align="center">
+        <h1>Stormbreakers</h1>
+    </div>
+
+        <aside>
+            <ul style="list-style-type:none">
+                <li>David Enersen - 2D art/Art lead</li>
+                <li>Brett Blackstock - Project Leader/Head Programmer</li>
+                <li>Michael Krause - project manager/Utilities/Narrative Lead</li>
+                <li>Rachel Groth - Programmer</li>
+                <li>Skyler Wittmer - 2D artist</li>
+                <li>Quincton Rush - 2D artist</li>
+                <li>Wade Hetland- Narrative  Designer/Utilities</li>
+                <li>Charlie Brown- Narrative  Designer/Utilities</li>
+                <li>Garrett Verhoeven - Contract Sound Designer</li>
+            </ul>
+        </aside>
+    <br/><br/><br/><br/><br/><br/> <h1>content coming soon</h1>
+    <br/><br/><br/> <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>
+    <h1>Landkreuzer</h1>
+    <section>
+        <img src="Images/landkreuzer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Landkreuzer" style="width:80%" style="height:80%">
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/_c4gPPXD-kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+    <section>
         <ul style="list-style-type:none">
-            <li>David Enersen - 2D art/Art lead</li>
-            <li>Brett Blackstock - Project Leader/Head Programmer</li>
-            <li>Michael Krause - project manager/Utilities/Narrative Lead</li>
-            <li>Rachel Groth - Programmer</li>
-            <li>Skyler Wittmer - 2D artist</li>
-            <li>Quincton Rush - 2D artist</li>
-            <li>Wade Hetland- Narrative  Designer/Utilities</li>
-            <li>Charlie Brown- Narrative  Designer/Utilities</li>
-            <li>Garrett Verhoeven - Contract Sound Designer</li>
+            <li>David Enersen - 3D artist/2D artist</li>
+            <li>Nathan Golen - project leader</li>
+            <li>Gus Dubetz - project manager/utilities</li>
+            <li>Ethan Grahn - Programmer</li>
+            <li>Adam Gacke - Narrative  Designer/Utilities</li>
+            <li>Matt Balcom - 3D artist</li>
         </ul>
-                <br/><br/><br/>
-                <h2>content coming soon</h2>
-                <br/><br/><br/>
-
-
-                <h2>Landkreuzer</h2>
-                <img src="Images/landkreuzer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Landkreuzer" style="width:80%" style="height:80%">
-                <iframe width="450" height="315" src="https://www.youtube.com/embed/_c4gPPXD-kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <ul style="list-style-type:none">
-                    <li>David Enersen - 3D artist/2D artist</li>
-                    <li>Nathan Golen - project leader</li>
-                    <li>Gus Dubetz - project manager/utilities</li>
-                    <li>Ethan Grahn - Programmer</li>
-                    <li>Adam Gacke - Narrative  Designer/Utilities</li>
-                    <li>Matt Balcom - 3D artist</li>
-                </ul>
-
-                <br/><br/><p>"Blow up, mow down, and crush evil cyborgs under your treads in the largest tank known to man, Landkreuzer.
-                Crew up with your friends and become a juggernaut in this 3D couch co-op action game. Can you work together to save
-                Europe from total annihilation?"
+        <br/><br/><p>"Blow up, mow down, and crush evil cyborgs under your treads in the largest tank known to man, Landkreuzer.
+        Crew up with your friends and become a juggernaut in this 3D couch co-op action game. Can you work together to save
+        Europe from total annihilation?"
         <br/><br/></p>
-                <h2><a href="https://www.facebook.com/LandkreuzerGame/">Link to the facebook page!</a><br/></h2>
+    </section>
+
+                <h2><br/><br/><br/><a href="https://www.facebook.com/LandkreuzerGame/">Link to the facebook page!</a><br/></h2>
                 <h2><a href="https://drive.google.com/file/d/0B9_wC-uoA538bUt5WGg2dFFrNlE/view?usp=sharing">Link to the downloadable game!</a></h2>
 
     </div>
+    <br/><br/><br/> <br/><br/><br/> <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>
     <a id="resume"></a>
     <div align="center">
         <h1>Digital Resume<br/><a href="docs/resume.pdf">Download</a></h1>

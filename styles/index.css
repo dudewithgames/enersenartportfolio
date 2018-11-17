@@ -8,6 +8,7 @@ html {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
+	background-color: black;
 }
 body {
 	font-family: font / code_light-webfont . woff2, 'code_lightregular', Arial, Helvetica, sans-serif;
@@ -18,8 +19,10 @@ body {
 	max-width: 1250px;
 	margin: 0 auto;
 	background-color: rgba(191, 232, 183, 0.84);
+	transition: width 2s linear 1s;
 
 }
+
 .effect8
 {
 	position:relative;
@@ -76,7 +79,7 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-
+.dork img {float: right;}
 
 /* the styles for the navigation menu */
 #nav_menu
@@ -132,6 +135,7 @@ header img {
 {
 	background-color: #00ff13;
 	color:#000000;
+
 }
 #nav_menu ul ul li {
 	float: none;
@@ -149,7 +153,6 @@ header img {
 
 /* the styles for the main content */
 main {
-	clear: left;
 }
 table {
 	border-collapse: collapse;
@@ -159,10 +162,11 @@ table {
 /* the styles for the section */
 section {
 	width: 50%;
-	float:right;
+	float: right;
 	padding: 0 2.5% 0px 2.5%;
 }
 aside {
+	float: left;
 	width: 50%;
 	padding: 0 2.5% 0px 2.5%;
 }
@@ -274,9 +278,13 @@ ul
 @media only screen and (max-width:479px){
 	body{font-size:90%;}
 }
+* {
+	box-sizing: border-box;
+}
+
 /* The grid: Four equal columns that floats next to each other */
 .column {
-	float: left;
+	float: right;
 	width: 25%;
 	padding: 10px;
 }
@@ -300,11 +308,6 @@ ul
 
 /* The expanding image container */
 .container {
-	position: relative;
-	display: none;
-}
-.container2 {
-	position: relative;
 	display: none;
 }
 
@@ -329,8 +332,6 @@ ul
 
 div.gallery {
 	border: 1px solid #ccc;
-	margin: 0 auto;
-	text-align: center;
 }
 
 div.gallery:hover {
@@ -340,7 +341,6 @@ div.gallery:hover {
 div.gallery img {
 	width: 100%;
 	height: auto;
-
 }
 
 div.desc {
@@ -355,7 +355,6 @@ div.desc {
 .responsive {
 	padding: 0 6px;
 	float: left;
-	text-align: center;
 	width: 24.99999%;
 }
 
@@ -377,27 +376,6 @@ div.desc {
 	display: table;
 	clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
