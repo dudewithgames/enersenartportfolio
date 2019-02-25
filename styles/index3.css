@@ -102,7 +102,13 @@ iframe {
 {
     float: left;
 }
-
+@media only screen and (max-width:960px)
+{
+    #thumbnail
+    {
+        display: none;
+    }
+}
 footer
 {
     font-size: 50%;
