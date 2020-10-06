@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19a73195-7171-4921-b46c-b3aea9f577ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
       <workItem from="1592276956312" duration="475000" />
       <workItem from="1592409498928" duration="750000" />
       <workItem from="1598586933529" duration="882000" />
-      <workItem from="1601940836332" duration="5487000" />
+      <workItem from="1601940836332" duration="6949000" />
     </task>
     <servers />
   </component>
@@ -49,13 +48,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1026" y="1342" key="FileChooserDialogImpl" timestamp="1598588024668">
-      <screen x="287" y="1080" width="1920" height="1040" />
+    <state x="739" y="1342" key="FileChooserDialogImpl" timestamp="1601999572980">
+      <screen x="0" y="1080" width="1920" height="1040" />
     </state>
+    <state x="739" y="1342" key="FileChooserDialogImpl/0.0.1920.1040/0.1080.1920.1040/-1920.1074.1920.1040@0.1080.1920.1040" timestamp="1601999572980" />
     <state x="1026" y="1342" key="FileChooserDialogImpl/0.0.2560.1040/287.1080.1920.1040@287.1080.1920.1040" timestamp="1598588024668" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592258036285">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/287.1080.1920.1040@0.0.2560.1040" timestamp="1592258036285" />
   </component>
 </project>
